@@ -4,9 +4,9 @@
 // importScripts('https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js');
 // importScripts('https://www.gstatic.com/firebasejs/11.2.0/firebase-messaging.js');
 try {
-  importScripts("https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js");
+  importScripts("https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js");
   console.log("firebase-app.js loaded successfully.");
-  importScripts("https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging.js");
+  importScripts("https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging-compat.js");
   console.log("firebase-messaging.js loaded successfully.");
   firebase.initializeApp({
     apiKey: "AIzaSyBR8nz544OF_Wb0CdCbn-MSXKLvq_1wt3E",
