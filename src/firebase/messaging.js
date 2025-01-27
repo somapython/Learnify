@@ -6,7 +6,8 @@ const messaging = getMessaging(firebaseApp);
 
 export async function requestNotificationPermission() {
   const permission = await Notification.requestPermission();
-  console.log("2222",permission)
+  console.log("permission",permission);
+  console.log("registration",registration);
 const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
   if (permission === "granted") {
     // console.log("Notification permission granted.");
