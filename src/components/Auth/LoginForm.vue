@@ -1,12 +1,12 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-purple-500 to-blue-500 text-white p-4">
-    <div class="w-full max-w-md bg-white text-gray-900 rounded-lg shadow-lg p-6">
-    <button class="absolute top-28 left-8 text-purple-700 hover:text-purple-900" @click="goBack">
+  <div class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-purple-500 to-blue-500 text-white px-4">
+    <div class="w-full max-w-md bg-white text-gray-900 rounded-lg shadow-lg p-6 relative">
+    <button class="absolute top-4 left-8 text-purple-700 hover:text-purple-900" @click="goBack">
         <i class="fa fa-arrow-left text-2xl"></i>
-      </button>
+      </button> 
 
       <!-- Header Section -->
-      <div class="absolute top-28 right-28 text-purple-700 animate-spin-slow mt-0">
+      <div class="absolute top-4 right-24 text-purple-700 animate-spin-slow mt-1">
         <i class="fa fa-lock text-2xl"></i>
       </div>
       <div class="text-right mb-6">
