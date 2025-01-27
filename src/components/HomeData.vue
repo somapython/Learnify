@@ -324,6 +324,7 @@ export default {
         //   vapidKey: "YOUR_PUBLIC_VAPID_KEY",
         // });
         const token = await requestNotificationPermission();
+         console.log("1111",token)
 
         if (token) {
           this.isNotificationEnabled = true;
