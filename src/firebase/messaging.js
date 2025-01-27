@@ -7,10 +7,10 @@ const messaging = getMessaging(firebaseApp);
 export async function requestNotificationPermission() {
   const permission = await Notification.requestPermission();
   console.log("2222",permission)
-//   const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
+const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
   if (permission === "granted") {
     // console.log("Notification permission granted.");
-    const token = await getToken(messaging, { vapidKey: "BOux5b-A33GBaCHi_GPbllmZCcxVIsuJ6_b0sE0XPZgfeuuFl5yZCK4QbvDlxTcx0zColvozc1o-XgMsH9vlSto"  });
+    const token = await getToken(messaging, { vapidKey: "BOux5b-A33GBaCHi_GPbllmZCcxVIsuJ6_b0sE0XPZgfeuuFl5yZCK4QbvDlxTcx0zColvozc1o-XgMsH9vlSto", serviceWorkerRegistration: registration,   });
     // console.log("FCM Token:", token);
     return token;
   } else {
