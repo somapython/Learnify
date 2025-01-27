@@ -1,2 +1,24 @@
-# Learnify
-it is a Learnify App fpr mobile devices only using vue components where we can see online classes , online Learning competitions and book library also and winning exciting prizes. 
+# online-platform
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
